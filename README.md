@@ -46,4 +46,4 @@ source .venv/Scripts/activate
 python -m pip install --upgrade pip
 ```
 
-## **For detailed project report and analytics, refer **
+## For detailed project report and analytics, refer 
