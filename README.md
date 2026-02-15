@@ -46,4 +46,4 @@ source .venv/Scripts/activate
 python -m pip install --upgrade pip
 ```
 
-## For detailed project report and analytics, refer [Project Report] (https://github.com/Tan1208257/Crypto_Price_Detection/blob/main/Project%20report.ipynb)
+## For detailed project report and analytics, refer [Project Report] (Project Report.ipynb)
