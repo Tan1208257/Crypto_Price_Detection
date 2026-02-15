@@ -47,3 +47,4 @@ python -m pip install --upgrade pip
 ```
 
 ## For detailed project report and analytics, refer [Project Report](Project Report.ipynb)
+
