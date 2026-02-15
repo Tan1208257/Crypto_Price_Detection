@@ -15,20 +15,20 @@ Each asset dataset contains:
 - Trading volume
 - Timestamp
 
-## Objective
-Predict whether the closing price at time `t+1` will be higher or lower than at time `t`.
+## This project builds a **binary classifier** that predicts whether the next **1-hour** close will be **up (1)** or **down (0)** using only information available up to time *t*.
 
-## Methodology
-1. Merge multiple crypto datasets into a single universal dataset
-2. Perform exploratory data analysis (EDA)
-3. Engineer time-series features using past information only
-4. Split data chronologically into train, validation, and test sets
-5. Train and compare multiple models
-6. Select the final model based on robust evaluation metrics
-
+Requirements covered:
+- Uses **rate of change (%)** features rather than absolute values.
+- Builds a supervised dataset using a **lookback window** (previous *t* steps).
+- Uses the **last year** of data (from the last timestamp) as the **test set** (at minimum).
+- Uses **1-hour candles** (resampled from 15m).
+- Builds **multiple ML models** and shows **metric improvement** from a baseline model to optimized models.
+- Explains **why** each step is done.
+- 
 ## Models Used
 - Logistic Regression (baseline)
 - Random Forest
+- HistGradientBoosting
 - XGBoost
 
 ## Evaluation Metrics
@@ -38,8 +38,9 @@ Predict whether the closing price at time `t+1` will be higher or lower than at 
 - Confusion Matrix
 
 ## How to Run
-```bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-jupyter notebook
+```bat
+:: (1) Create & activate a virtual environment
+python -m venv .venv
+source .venv/Scripts/activate
+:: (2) Upgrade pip
+python -m pip install --upgrade pip
