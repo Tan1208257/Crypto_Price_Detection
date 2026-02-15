@@ -44,5 +44,6 @@ python -m venv .venv
 source .venv/Scripts/activate
 :: (2) Upgrade pip
 python -m pip install --upgrade pip
+```
 
 ## **For detailed project report and analytics, refer **
